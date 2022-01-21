@@ -1,0 +1,40 @@
+<h1> Hi Pipe Demo</h1>
+
+<h3>custom pipe</h3>
+{{4 | sqr}}<br>
+{{4 | cub}}<br>
+<hr>
+
+<h4>
+    {{str}}<br>
+    {{str | uppercase}} <br>
+    {{str | lowercase}} <br>
+    {{str | titlecase}} <br>
+    {{str | slice:0:5}} <br>
+
+
+    <hr>
+    {{d1}} <br>
+    {{d1 | date}} <br>
+    {{d1 | date: 'dd/MM/yyyy'}} <br>
+    {{d1 | date: 'MM/dd/yyyy'}} <br>
+    {{d1 | date: 'dd/MM/yy'}} <br>
+    {{d1 | date |uppercase}} <br>
+
+
+    <hr>
+    {{amount | currency}}<br>
+    {{amount | currency: 'INR'}}<br>
+    {{amount | currency: 'EUR'}}<br>
+    {{amount | currency: 'USD'}}<br>
+    {{amount | currency: 'CAD'}}<br>
+    {{amount | currency: 'JAY'}}<br>
+    {{amount | currency: 'SAR'}}<br>
+<hr>
+
+
+{{emp}}<br>
+{{emp | json}}
+
+</h4>
+

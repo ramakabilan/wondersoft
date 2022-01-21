@@ -7,12 +7,17 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ServiceComponent } from './service/service.component';
+import { SignupComponent } from './signup/signup.component';
 import { TestingComponent } from './testing/testing.component';
 
 const routes: Routes = [
   {
     path:'home',
     component:HomeComponent
+  },
+  {
+    path:'signup',
+    component:SignupComponent
   },
   {
     path:'login',
