@@ -11,51 +11,51 @@ export class DirectivesdemoComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // mycondition:true;
+    mycondition:true;
 
   }
 
-  // fruits:Array<string>=["Apple","Banana","Cikku","PineApple"];
+  fruits:Array<string>=["Apple","Banana","Cikku","PineApple"];
 
-  // addfruit(fruit:any){
-  //   this.fruits.push(fruit)
-  //   this.fruits.reverse()
-  // }
+  addfruit(fruit:any){
+    this.fruits.push(fruit)
+    this.fruits.reverse()
+  }
 
-  // days:Array<string>=["Sunday","Moday","Tuesday","Wednesday","Thrusday","Friday","Saturday"];
+  days:Array<string>=["Sunday","Moday","Tuesday","Wednesday","Thrusday","Friday","Saturday"];
 
-  // myval=3;
+  myval=3;
 
 
 
   
-  // clr: string = "red";
-  // bgc: string = "blue";
+  clr: string = "green";
+  bgc: string = "blue";
 
 
-  // selected = {
-  //   name: 'green',
-  //   color: 'green'
-  // }
+  selected = {
+    name: 'green',
+    color: 'green'
+  }
 
 
-  // data = [{
-  //   name: 'blue',
-  //   color: 'blue'
-  // }, {
-  //   name: 'green',
-  //   color: '#008000'
-  // }, {
-  //   name: 'red',
-  //   color: 'red'
-  // }, {
-  //   name: 'yellow',
-  //   color: 'yellow'
-  // }]
+  data = [{
+    name: 'blue',
+    color: 'blue'
+  }, {
+    name: 'green',
+    color: '#008000'
+  }, {
+    name: 'red',
+    color: 'red'
+  }, {
+    name: 'yellow',
+    color: 'yellow'
+  }]
 
-  // compareObjects(o1: any, o2: any): boolean {
-  //   return o1.color === o2.color
-  // }
+  compareObjects(o1: any, o2: any): boolean {
+    return o1.color === o2.color
+  }
 
 }
 

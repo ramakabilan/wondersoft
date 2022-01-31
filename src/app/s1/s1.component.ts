@@ -8,15 +8,28 @@ import { DemoservService } from '../demoserv.service';
 })
 export class S1Component implements OnInit {
 
-  constructor(private dblogin:DemoservService) { }
+  constructor(private srm:DemoservService) { }
+
+  receiveData:any = []
 
   ngOnInit(): void {
+
+    this.receiveData = this.srm.positiveMsg
+
   }
-myname:any = ""
-abc(myname:any){
-  this.myname = myname
-  this.dblogin.db(myname)
-}
+
+
+
+  // kabil(){
+  //   this.srm.rm();
+  // }
+
+
+sendMsg:any = []
+  kabil(srmkabil:any){
+    this.sendMsg = this.srm.rm(srmkabil);
+    return this.sendMsg
+  }
 
 
 }

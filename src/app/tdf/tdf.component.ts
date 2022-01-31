@@ -12,8 +12,22 @@ export class TDFComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onSubmit(mydata:NgForm){
-    console.log(mydata)
+  onSubmit(ngForm:any){
+    console.log(ngForm)
   }
+// ananth(name:any,age:any){
+//   localStorage.setItem("myname is",name)
+//   localStorage.setItem("my age is",age)
+// }
+
+
+
+name:any=""
+age: any=""
+ananth(){
+localStorage.setItem("myname",this.name)
+localStorage.setItem("myage",this.age)
+}
+
 
 }

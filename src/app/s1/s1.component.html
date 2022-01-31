@@ -1,6 +1,17 @@
-<div>
-<input type="text" #myname>
-<input type="button" value="click of s1" (click) = "abc(myname.value)">
 
 
-</div>
+
+
+<!-- <input type="text">
+<input type="button" value="click" (click) = "kabil()"> -->
+
+
+
+<input type="text" #srm>
+<input type="button" value="click" (click) = "kabil(srm.value)">
+<h4 *ngFor = "let jmmar of sendMsg" style="padding-left: 64px;">
+    {{jmmar}}
+</h4>
+<p *ngFor = "let rec of receiveData">
+    {{rec}}
+</p>

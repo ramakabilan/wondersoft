@@ -55,7 +55,8 @@ import { RDFComponent } from './rdf/rdf.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,
+    AppRoutingModule,
+    FormsModule,
     ReactiveFormsModule
   ],
   providers: [],

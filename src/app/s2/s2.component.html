@@ -1,6 +1,17 @@
-<div>
-    <input type="text" #myname>
-    <input type="button" value="click of s2" (click) = "abc(myname.value)">
-    
-    
-    </div>
+
+
+
+<!-- <input type="text">
+<input type="button" value="click" (click) = "vishwa()"> -->
+
+
+
+
+<input type="text" #srk>
+<input type="button" value="click" (click) = "vishwa(srk.value)">
+<h4 *ngFor = "let madhu of sendingMsg" style="padding-left: 64px;">
+    {{madhu}}
+</h4>
+<p *ngFor = "let data of receiveData">
+    {{data}}
+</p>

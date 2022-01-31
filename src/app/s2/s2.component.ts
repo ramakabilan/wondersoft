@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DemoservService } from '../demoserv.service';
-
 @Component({
   selector: 'app-s2',
   templateUrl: './s2.component.html',
@@ -8,14 +7,26 @@ import { DemoservService } from '../demoserv.service';
 })
 export class S2Component implements OnInit {
 
-  constructor(private dblog:DemoservService) { }
+  constructor(private madhu:DemoservService) { }
+
+  receiveData:any = []
 
   ngOnInit(): void {
-  }
-  name = ''
-  abc(myname:any){
-    this.name = this.dblog.name
+
+    this.receiveData = this.madhu.possingMsg
+
   }
 
+
+
+// vishwa(){
+//   this.madhu.mk();
+// }
+
+sendingMsg:any = []
+vishwa(srkabil:any){
+this.sendingMsg = this.madhu.mk(srkabil);
+return this.sendingMsg
+}
 
 }

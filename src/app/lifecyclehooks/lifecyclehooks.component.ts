@@ -5,20 +5,20 @@ import { Component, DoCheck, OnDestroy, OnInit } from '@angular/core';
   templateUrl: './lifecyclehooks.component.html',
   styleUrls: ['./lifecyclehooks.component.css']
 })
-export class LifecyclehooksComponent implements OnInit, OnDestroy, DoCheck{
+export class LifecyclehooksComponent {
 
-  constructor() { 
-    console.log(" Hi constructor");
-  }
-  ngDoCheck(): void {
-    console.log(" Hi docheck");
-  }
-  ngOnDestroy(): void {
-    console.log(" Hi destory");
-  }
+  // constructor() { 
+  //   console.log(" Hi constructor");
+  // }
+  // ngDoCheck(): void {
+  //   console.log(" Hi docheck");
+  // }
+  // ngOnDestroy(): void {
+  //   console.log(" Hi destory");
+  // }
 
-  ngOnInit(): void {
-    console.log(" Hi oninit");
-  }
+  // ngOnInit(): void {
+  //   console.log(" Hi oninit");
+  // }
 
 }

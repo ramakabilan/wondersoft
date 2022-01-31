@@ -1,4 +1,4 @@
-<!-- <div class="container">
+<div class="container">
     <div class="mb-3">
       <label for="princile_amount" class="form-label">Principle Amount</label>
       <input type="text"
@@ -18,22 +18,22 @@
       #durations>
     </div>
     <div class="mb-3">
-      <label for="" class="form-label">Type Of Loan</label>
+      <label for="type_loan" class="form-label">Type Of Loan</label>
       <select class="form-control" name="" id="type_loan" #loanType>
         <option value="8">Car Loan</option>
         <option value="7">Home Loan</option>
         <option value="10">Personal Loan</option>
       </select>
     </div>
-    <button type="button" class="btn btn-success" (click) = "calculateResult(pAmount.value, durations.value, loanType.value)">Submit</button>
-    <button type="button" class="btn btn-danger" (click) = "calculateResult(pAmount.value, durations.value, loanType.value)">Reset</button>
+    <button type="button" class="btn btn-success" (click) = "calculateResult(pAmount.value, durations.value, loanType.value)" >Submit</button>
+    <button type="reset" class="btn btn-danger" (click) = "calculateReset()">Reset</button>
 
     
   <h2>EMI: {{ emi }}</h2>
   <h2>TOTAL: {{ total }}</h2>
 
 
-  </div> -->
+  </div>
 
 
 

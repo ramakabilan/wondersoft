@@ -12,7 +12,7 @@ export class PipedemoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-str:string = "hi hello every body just for demo"
+str:string = "hi hello srmKabil"
 d1 = new Date();
 amount:number = 12345678;
 emp = {'name':'kabilan','age':24}
